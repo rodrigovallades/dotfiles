@@ -30,15 +30,6 @@ run_brew() {
 	brew install grep
 	brew install screen
 
-	# Databases
-	brew install mariadb
-	brew install mongodb
-
-	# Apache/PHP Stuff - https://gist.github.com/DragonBe/0faebe58deced34744953e3bf6afbec7
-	brew install httpd
-	brew install php71
-	brew install composer
-
 	#Python
 	brew install python3
 
@@ -62,7 +53,6 @@ run_brew() {
 	brew install nvm
 	brew install rename
 	brew install tree
-	brew install wp-cli
 	#brew install android-platform-tools
 
 	# Install code review tools
@@ -75,7 +65,6 @@ run_brew() {
 	brew install git-extras
 
 	# Install other tools
-	brew install docker docker-machine docker-clean
 	brew install watchman
 
 	#brew link openssl --force

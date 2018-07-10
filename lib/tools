@@ -17,9 +17,6 @@ run_tools() {
 	e_process "Installing colors"
 	sudo cp -p ./bin/colors.sh /usr/local/bin/colors
 
-	e_process "Installing docker-start"
-	sudo cp -p ./bin/docker-start.sh /usr/local/bin/docker-start
-
 	e_process "Installing search"
 	sudo cp -p ./bin/search.sh /usr/local/bin/search
 

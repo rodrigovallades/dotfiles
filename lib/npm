@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 npm_packages=(
-	@sanity/cli
-	aws-sam-local
 	babel-cli
 	babel-preset-env
 	babel-preset-react
@@ -10,12 +8,7 @@ npm_packages=(
 	babel-register
 	bower
 	create-react-app
-	create-react-native-app
 	flow-typed
-	github-labels
-	gulp
-	iectrl
-	jscodeshift
 	nodemon
 	npm-check-updates
 	npm-consider
@@ -26,8 +19,6 @@ npm_packages=(
 	prop-types
 	react
 	react-dom
-	serverless
-	react-native-cli
 	release
 	serve
 	source-map-explorer
@@ -35,7 +26,6 @@ npm_packages=(
 	svgo
 	tldr
 	webpack-bundle-analyzer
-	yarn
 )
 
 # Install node packages

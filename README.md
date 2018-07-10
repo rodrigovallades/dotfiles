@@ -7,7 +7,7 @@ This repo is mostly for me but you're welcome to make suggestions. Fork it!
 
 ## install the necessary apps
 
-The basic setup is executed in `install.sh` which adds a ton of stuff: [brew](https://github.com/gilbarbara/dotfiles/blob/master/lib/brew) (node, php, mongo, mysql, python, ruby), [cask](https://github.com/gilbarbara/dotfiles/blob/master/lib/apps) and some [gems](https://github.com/gilbarbara/dotfiles/blob/master/lib/rubygems), [npm global packages](https://github.com/gilbarbara/dotfiles/blob/master/lib/npm) and more.
+The basic setup is executed in `install.sh` which adds a ton of stuff: [brew](https://github.com/rodrigovallades/dotfiles/blob/master/lib/brew) (node, php, mongo, mysql, python, ruby), [cask](https://github.com/rodrigovallades/dotfiles/blob/master/lib/apps) and some [gems](https://github.com/rodrigovallades/dotfiles/blob/master/lib/rubygems), [npm global packages](https://github.com/rodrigovallades/dotfiles/blob/master/lib/npm) and more.
 
 ## private config
 
@@ -65,7 +65,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ## Installation
 
 ```bash
-git clone https://github.com/gilbarbara/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && ./setup.sh
+git clone https://github.com/rodrigovallades/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && ./setup.sh
 ```
 
 Also you can install the modules individually
