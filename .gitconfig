@@ -49,7 +49,7 @@
   insteadOf = "git://github.com/rodrigovallades/"
 [user]
 	name = Rodrigo Vallades
-	email = rodrigovallades@gmail.com
+	email = rodrigo.vallades@gmail.com
 [filter "media"]
 	required = true
 	clean = git media clean %f

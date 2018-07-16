@@ -53,5 +53,3 @@ eval "$(hub alias -s)"
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
 	. $(brew --prefix)/share/bash-completion/bash_completion
 fi
-
-eval "$(gulp --completion=bash)"
