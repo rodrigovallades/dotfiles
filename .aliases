@@ -47,9 +47,6 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
-
 # Flush Directory Service cache
 alias flush="sudo killall -HUP mDNSResponder"
 #alias flush="dscacheutil -flushcache"
@@ -63,9 +60,6 @@ type -t hd > /dev/null || alias hd="hexdump -C"
 
 # OS X has no `md5sum`, so use `md5` as a fallback
 type -t md5sum > /dev/null || alias md5sum="md5"
-
-# Trim new lines and copy to clipboard
-alias trimcopy="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
@@ -110,20 +104,16 @@ alias slint='npm run lint:styles'
 alias t='npm test'
 alias tw='npm run test:watch'
 alias ta='npm run test:automation'
-alias npc='npm run precommit'
 
 alias pipup='pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U'
 
 alias cra='create-react-app'
 alias crna='create-react-native-app'
 
-alias v="vim"
-
 alias run='serve -o'
 alias pks='package-size'
 
 alias dk='cd ~/Desktop'
-alias ~f='open ~/'
 alias reload='source ~/.bashrc'
 
 # fasd aliases. remember to add them to fasd init
@@ -137,21 +127,11 @@ alias pi="ping -o"
 # File size
 alias fs="stat -f \"%z bytes\""
 
-alias duh="du -hcs"
-alias dh="df -h"
-
 # ROT13-encode text. Works for decoding, too! ;)
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
-
-# Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
-alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
