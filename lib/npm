@@ -6,36 +6,23 @@ npm_packages=(
 	babel-preset-react
 	babel-preset-stage-0
 	babel-register
-	bower
 	codesandbox
-	create-next-app
 	create-react-app
-	create-react-native-app
 	dotenv
-	flow-typed
 	gatsby-cli
-	gitbook-cli
-	github-labels
-	gulp
-	iectrl
-	jscodeshift
 	nodemon
+	now
 	npm-check-updates
-	npm-consider
-	ntl
 	package-size
 	pm2
 	prettier
 	prop-types
 	react
 	react-dom
-	release
 	serve
 	source-map-explorer
 	surge
 	svgo
-	tldr
-	vorlon
 	webpack-bundle-analyzer
 )
 
