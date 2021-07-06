@@ -50,6 +50,7 @@ run_brew() {
 	brew install rename
 	brew install tree
 	brew install zsh
+	brew install --cask unshaky
 
 	# Install code review tools
 	brew tap codeclimate/formulae
