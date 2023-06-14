@@ -6,6 +6,7 @@ npm_packages=(
 	babel-preset-react
 	babel-preset-stage-0
 	babel-register
+	bundle-phobia-cli
 	codesandbox
 	create-react-app
 	dotenv
@@ -13,7 +14,6 @@ npm_packages=(
 	nodemon
 	now
 	npm-check-updates
-	package-size
 	pm2
 	prettier
 	prop-types

@@ -152,7 +152,7 @@ alias t='npm test'
 alias tw='npm run test:watch'
 alias cra='create-react-app'
 alias crna='create-react-native-app'
-alias pks='package-size'
+alias pks='bundle-phobia'
 
 # tools aliases
 alias t1='tree -L 1'
