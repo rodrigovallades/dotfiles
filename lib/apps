@@ -3,21 +3,21 @@
 # Install native apps
 run_apps() {
 	#utils
-	brew cask install alfred
-	brew cask install cakebrew
-	brew cask install launchcontrol
+	brew install --cask alfred
+	brew install --cask cakebrew
+	brew install --cask launchcontrol
 
 	# dev
-	brew cask install couleurs
-	brew cask install cyberduck
-	brew cask install firefox
-	brew cask install github
-	brew cask install google-chrome
-	brew cask install imageoptim
-	brew cask install ksdiff # Kaleidoscope command line
-	brew cask install macdown
-	brew cask install visual-studio-code
+	brew install --cask couleurs
+	brew install --cask cyberduck
+	brew install --cask firefox
+	brew install --cask github
+	brew install --cask google-chrome
+	brew install --cask imageoptim
+	brew install --cask ksdiff # Kaleidoscope command line
+	brew install --cask macdown
+	brew install --cask visual-studio-code
 
 	# colorpickers
-	brew cask install colorpicker-materialdesign colorpicker-propicker colorpicker-skalacolor
+	brew install --cask colorpicker-materialdesign colorpicker-propicker colorpicker-skalacolor
 }
