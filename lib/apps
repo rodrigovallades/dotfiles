@@ -6,6 +6,7 @@ run_apps() {
 	brew install --cask raycast
 	brew install --cask cakebrew
 	brew install --cask launchcontrol
+	brew install pygments
 
 	# dev
 	brew install --cask couleurs
