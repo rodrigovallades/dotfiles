@@ -6,11 +6,6 @@ run_tools() {
 		sudo curl -sS https://raw.githubusercontent.com/jamiew/git-friendly/master/install.sh | bash
 	fi
 
-	if ! type_exists 'pygmentize'; then
-		e_process "Installing pygments"
-		sudo easy_install Pygments
-	fi
-
 	e_process "Installing chmodr"
 	sudo cp -p ./bin/chmodr.sh /usr/local/bin/chmodr
 

@@ -92,11 +92,6 @@ if ! type_exists 'push'; then
 	sudo bash < <( curl https://raw.githubusercontent.com/jamiew/git-friendly/master/install.sh)
 fi
 
-if ! type_exists 'pygmentize'; then
-	e_process "Installing pygments"
-	sudo easy_install Pygments
-fi
-
 
 e_success "All packages have been installed"
 
