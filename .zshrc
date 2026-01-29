@@ -72,6 +72,7 @@ ZSH_THEME="agnoster"
 plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.aliases
 
 # User configuration
 
@@ -98,62 +99,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# system aliases
-alias pipup='pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U'
-alias dk='cd ~/Desktop'
-alias reload='source ~/.zshrc'
-
-# easier navigation: .., ..., ~ and -
-alias ..="cd .."
-alias cd..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
-
-# `cat` with beautiful colors. requires Pygments installed.
-# 							   sudo easy_install Pygments
-alias c='pygmentize -O style=monokai -f console256 -g'
-
-# git aliases
-alias g="git"
-alias gh="github"
-alias gl="git log --oneline --all --graph --decorate"
-alias gs="git status"
-alias gsl="git stash list"
-
-# npm aliases
-alias nog='npm outdated -g --depth=0'
-alias nig='npm install -g'
-alias nug='npm update -g'
-alias ni='npm install'
-alias nid='npm install --save-dev'
-alias nu='npm update'
-alias nrm='npm rm'
-
-# development aliases
-alias start='npm start'
-alias build='npm run build'
-alias publish='npm run publish'
-alias deploy='npm run deploy'
-alias lint='npm run lint'
-alias slint='npm run lint:styles'
-alias t='npm test'
-alias tw='npm run test:watch'
-alias cra='create-react-app'
-alias crna='create-react-native-app'
-alias pks='bundle-phobia'
-
-# tools aliases
-alias t1='tree -L 1'
-eval $(thefuck --alias fuck)
