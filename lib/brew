@@ -36,6 +36,7 @@ run_brew() {
 	brew install wget --with-iri
 
 	# Install useful binaries
+	brew install eza
 	brew install ack
 	brew install gpg
 	brew install thefuck
