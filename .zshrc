@@ -73,6 +73,7 @@ plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
+source ~/.functions
 
 # User configuration
 
