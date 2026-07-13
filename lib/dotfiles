@@ -11,7 +11,7 @@ run_dotfiles() {
 			e_warning ".npmrc already exists, do it manually"
 		else
 			rm -rf ~/$i
-			ln -s .dotfiles/$i ~
+			ln -sf "$HOME/.dotfiles/$i" ~/$i
 		fi
 	done
 
