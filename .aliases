@@ -72,15 +72,14 @@ alias g="git"
 alias ghd="github"
 alias gl="git log --oneline --all --graph --decorate"
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
-alias gs="git status"
+alias gs="git status -u"
 alias gsl="git stash list"
 alias gst='git add . && git stash'
 
 # development aliases
 alias pks='bundle-phobia'
-
-# ping only once and die
-alias pi="ping -o"
+alias review='~/dev/dev-utils/bin/graphite-ai-review'
+alias models='~/dev/dev-utils/bin/query-llm-models --ids'
 
 # File size
 alias fs="stat -f \"%z bytes\""
