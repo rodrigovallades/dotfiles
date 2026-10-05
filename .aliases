@@ -79,7 +79,7 @@ alias gst='git add . && git stash'
 # development aliases
 alias pks='bundle-phobia'
 alias review='~/dev/dev-utils/bin/graphite-ai-review'
-alias models='~/dev/dev-utils/bin/query-llm-models --ids'
+alias models='~/dev/dev-utils/bin/query-llm-models'
 
 # File size
 alias fs="stat -f \"%z bytes\""
