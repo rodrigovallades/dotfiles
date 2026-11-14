@@ -19,10 +19,11 @@ export LANG="en_US"
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-# init nvm
-export NVM_DIR=/usr/local/nvm
+# init nvm (NVM_DIR must be user-writable; /usr/local is root-owned on Apple Silicon)
+export NVM_DIR="$HOME/.nvm"
 export NVM_SYMLINK_CURRENT=true
-source $(brew --prefix nvm)/nvm.sh
+mkdir -p "$NVM_DIR"
+[ -s "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh"
 
 # Ruby paths
 export GEM_HOME="$(brew --prefix)/opt/gems"
@@ -45,8 +46,7 @@ fi
 
 eval $(thefuck --alias)
 
-eval "$(hub alias -s)"
-
-if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
-	. $(brew --prefix)/share/bash-completion/bash_completion
+# bash-completion (Homebrew's) needs bash 4+; login shells may run the system bash 3.2
+if (( BASH_VERSINFO[0] >= 4 )) && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
+	. "$(brew --prefix)/share/bash-completion/bash_completion"
 fi
